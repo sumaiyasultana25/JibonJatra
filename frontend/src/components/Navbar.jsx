@@ -8,16 +8,18 @@ const Navbar = ({ role, onLogout }) => {
 
   // Base links for all users
   const BASE_LINKS = [
-    { to: "/posts", label: "Posts" },
-    { to: "/profile", label: "Profile" },
+    
+    
     { to: "/feed", label: "Feed" },
+    { to: "/posts", label: "Posts" },
     { to: "/market", label: "Market" },
     { to: "/shop", label: "Shop" },
     { to: "/services", label: "Service" },
     { to: "/lostfound", label: "Lost & Found" },
     { to: "/home-rent", label: "Home Rent" },
-    { to: "/announcements", label: "Announcements" },
-    { to: "/sponsored-posts", label: "Sponsored Posts" },
+    { to: "/profile", label: "Profile" },
+    // { to: "/announcements", label: "Announcements" },
+    // { to: "/sponsored-posts", label: "Sponsored Posts" },
   ];
   
   const SHARED_LINKS = [
@@ -33,9 +35,8 @@ const Navbar = ({ role, onLogout }) => {
 
   // Extra links for admins
   const ADMIN_LINKS = [
-    { to: "/admin/users", label: "Users" },
-    { to: "/admin/announcements", label: "Announcements" },
-    { to: "/admin/sponsored-posts", label: "Sponsored Posts" }, // ← FIXED PATH
+    { to: "/admin", label: "Dashboard" },
+
   ];
 
   // Combine base links with admin links if role is admin
